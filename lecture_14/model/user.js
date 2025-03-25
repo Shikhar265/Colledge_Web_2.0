@@ -18,3 +18,4 @@ let user=new mongooose.Schema({
 })
 let User=mongoose.model('User',user);
 module.exports=User;
+

@@ -1,0 +1,9 @@
+<h1><%= airport.airportName %> - <%= airport.city %></h1>
+<p>Country: <%= airport.country %></p>
+<p>Number of Terminals: <%= airport.numberOfTerminals %></p>
+<p>Contact: <%= airport.contactNumber %></p>
+
+<a href="/airports/<%= airport._id %>/edit">Edit</a>
+<form action="/airports/<%= airport._id %>?_method=DELETE" method="POST">
+    <button type="submit">Delete</button>
+</form>

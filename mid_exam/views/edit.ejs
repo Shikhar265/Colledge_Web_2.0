@@ -1,0 +1,8 @@
+<form action="/airports/<%= airport._id %>?_method=PUT" method="POST">
+    <input type="text" name="airportName" value="<%= airport.airportName %>" required>
+    <input type="text" name="city" value="<%= airport.city %>" required>
+    <input type="text" name="country" value="<%= airport.country %>" required>
+    <input type="number" name="numberOfTerminals" value="<%= airport.numberOfTerminals %>" required>
+    <input type="text" name="contactNumber" value="<%= airport.contactNumber %>" required>
+    <button type="submit">Update Airport</button>
+</form>
